@@ -27,6 +27,14 @@ body {
     width: 20vw;
     align-self: center;
 }
+#form-mod{
+    padding: 0% 10%;
+
+}
+.container-1{
+    width: 100vw;
+    background-color: cyan;
+}
 .navbar {
 	background: #fff;
 	padding-left: 16px;
