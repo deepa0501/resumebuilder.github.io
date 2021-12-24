@@ -4,181 +4,341 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
-    crossorigin="anonymous" />
-    <link rel="stylesheet" href="styles.css"/>
-    <title>resume Generator</title>
+    
+    <title>Resume-Builder</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="/css/bootstrap.min.css">  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Theme-3.css"  id="theme">    
 </head>
 <body>
-    <div class="container-1" style="margin: 0% 0%;">
-        <form class="form-horizontal" id="form-mod">
-            <fieldset>
-            
-            <!-- Form Name -->
-            <div class="row">
-                <div class="col">
-                   <center> <legend>Resume Details : (Fresher)</legend></center>
-                </div>
-            </div>
-            <hr>
-            
-            <div class="row">
-                <div class="col">
-                   <center> <legend>Personal Details</legend></center>
-                </div>
-            </div>
-            <br><br>
-            <div class="row">
-                <div class="col-3">
-                    <label class="control-label" for="name_id">Name : </label>  
-                </div>
-                <div class="col-6">
-                    <input id="name_id" name="name_id" type="text" placeholder="enter your name" class="form-control">
-                </div>
-            </div>
-            <br>
 
-            <div class="row">
-                <div class="col-3">
-                    <label class="control-label" for="phone_id">Phone Number :</label>  
 
-                </div>
-                <div class="col-6">
-                    <input id="phone_id" name="phone_id" type="text" placeholder="enter your phone number" class="form-control">
+    
+   <div class="container" id="cv-form">
+    <h1 class="text-center my-2" style="color: white;">Resume-Builder</h1>
+    <p class="text-center" style="color: white;">Fresher </p>
 
-                </div>
-            </div>
-            <br>
+    <!-- Grid 12 -->
+    <div class="row">
 
-            <div class="row">
-                <div class="col-3">
-                    <label class="control-label" for="email_id">email : </label>  
+        
+        <div class="col-md-6">
+        <!-- 6 grid  column1 -->
 
-                </div>
-                <div class="col-6">
-                    <input id="email_id" name="email_id" type="text" placeholder="enter your email address" class="form-control">
+        <h3 style="color: white;">Personal Information</h3>
 
-                </div>
-            </div>
-            <br>
-            
-            <div class="row">
-                <div class="col-3">
-                    <label class="control-label" for="linked_id">LinkedIn :</label>  
 
-                </div>
-                <div class="col-6">
-                    <input id="linked_id" name="linked_id" type="text" placeholder="enter your linkendIn profile url" class="form-control">
+        <!-- photo -->
+        <div class="form-group py-2 ">
 
-                </div>
-            </div>
-            <br>
+        <label for="photocv">Select your photo</label>   
+        <input type="file" class="form-control" id="photocvfield" style="padding-bottom: 2.5rem; padding-top: 10px" required>
+        
+        </div>
 
-            <div class="row">
-                <div class="col-3">
-                    <label class="col control-label" for="department_id">Department :</label>
-                </div>
-                <div class="col-6">
-                        <select id="department_id" name="department_id" class="form-control">
-                        <option value="">select department</option>
-                        <option value="CSE">CSE</option>
-                        <option value="IT">IT</option>
-                        <option value="ECE">ECE</option>
-                        <option value="EEE">EEE</option>
-                        <option value="MECH">MECH</option>
-                        <option value="CIVIL">CIVIL</option>
-                        <option value = "AUTOMOBILE">AUTOMOBILE</option>
-                        </select>
-                 </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-3">
-                    <label class="control-label" for="skills_id">Skills :</label>
 
-                </div>
-                <div class="col-6">
-                    <textarea class="form-control" id="skills_id" name="skills_id"></textarea>
 
-                </div>
-            </div>
-            <br>
-            
-            <div class="row">
-                <div class="col-3">
-                    <label class="control-label" for="softwareskills_id">Software Skills : </label>
+        <div class="form-group mt-2">
+            <label for="nameField">Your Name</label>
+            <input type="text" class="form-control" id="nameField" placeholder="Enter here">
 
-                </div>
-                <div class="col-6">
-                    <textarea class="form-control" id="softwareskills_id" name="softwareskills_id"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="emailField">Your Email</label>
+            <input type="email" class="form-control" id="emailField" placeholder="Enter here">
 
-                </div>
-            </div>
-            <br>
-            <hr>
-            <div class="row">
-                <div class="col">
-                   <center> <legend>Professional Information </legend></center>
-                </div>
-            </div>
-            <br><br>
+        </div>
+        <div class="form-group mt-2">
+            <label for="contactField">Contact No</label>
+            <input type="number" class="form-control" id="contactField" placeholder="Enter here">
 
-            <div class="row">
-                <div class="col-3">
-                    <label class="control-label" for="education_id">Education Details : </label>
+        </div>
+        <div class="form-group mt-2">
+            <label for="addressField">Your Address</label>
+            <textarea class="form-control mb-5" id="addressField" placeholder="Enter here"  ></textarea>
 
-                </div>
-                <div class="col-6">
-                    <textarea class="form-control" id="education_id" name="education_id"></textarea>
+        </div>
 
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-3">
-                    <label class="control-label" for="internship_id">Internship Details : </label>
 
-                </div>
-                <div class="col-6">
-                    <textarea class="form-control" id="internship_id" name="internship_id"></textarea>
+        <h4 class="my-3" style="color: white;">Social Links</h4>
 
-                </div>
-            </div>
-            <br>
+        <!-- github -->
+       
+        <div class="form-group">
 
-            <div class="row">
-                <div class="col-3">
-                    <label class="control-label" for="project_id">Projects Details : </label>
+            <label for="gitField">Github</label>
+            <i class="fa fa-github" aria-hidden="true" style="color: white"></i>
+            <input type="text" class="form-control" id="gitField" placeholder="Enter here">
 
-                </div>
-                <div class="col-6">
-                    <textarea class="form-control" id="project_id" name="project_id"></textarea>
+        </div>
 
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-3">
-                    <label class="control-label" for="certification_id">Upload Certificates : </label>
+        <!-- linkedin -->
+        <div class="form-group my-2">     
+                <label for="linkedinField">Linkedin </label>
+                <i class="fa fa-linkedin" aria-hidden="true" style="background: #007bb5 ;padding: 5px;"></i>
+            <input type="text" class="form-control" id="linkedinField" placeholder="Enter here">
 
-                </div>
-                <div class="col-6">
-                    <input id="certification_id" name="certification_id" class="input-file" type="file">
+        </div>
 
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col">
-                    <center>  <button id="createResume" name="createResume" class="btn btn-primary">create resume</button></center>
-                </div>
-            </div>
-            <br>
-              
-            </fieldset>
-        </form>    
+        <!-- portfolio -->
+
+
+
+     <!-- Languages -->
+
+     <h4 class="my-3 py-2" style="color: white;">Languages</h4>
+
+     <!-- L1 -->
+    
+     <div class="form-group">
+
+         <label for="NatLField">Native</label>
+         <i class="fa fa-language" aria-hidden="true" style="color: white"></i>
+         <input type="text" class="form-control" id="NatLField"" placeholder="Enter here">
+
+     </div>
+
+     <!-- professional -->
+     <div class="form-group">
+
+         <label for="proLField">Professional</label>
+         <i class="fa fa-language" aria-hidden="true" style="color: white"></i>
+         <input type="text" class="form-control" style="padding-top: 10px;" id="proLField" placeholder="Enter here">
+
+     </div>    
+        
+
+        
     </div>
-    <script src="script.js"></script>
+        <!-- 6 grid column2 -->
+
+        <div class="col-md-6">
+            
+            <h3 style="color : white">Professional Information</h3>
+    
+            <!-- job tittle -->
+            <div class="form-group " id = "hide_js">
+                <label for="jobtitleField">Job Title</label>
+                <input class="form-control" id="jobtitleField" placeholder="Enter here"  >
+    
+            </div>  
+
+            <!-- work exp -->
+            
+            <div class="form-group mt-2" id="workExp">
+                <label for="weField"><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp; Internships</label>
+                <textarea class="form-control weField" placeholder="Role at company" rows="2" ></textarea>
+                <input class="form-control weFieldTIME mt-2"
+                maxlength="20 type="text"  placeholder="TimePeriod"  >
+    
+    
+            </div>  
+            
+            <button class="btn-primary mt-2 btn-sm" id="weAdd-btn"> Add more </button>
+            <button class="btn-danger mt-2 btn-sm" id="weRem-btn"> Remove </button>
+
+
+             <!-- Education -->
+            <div class="form-group mt-3" id="education">
+                <label for="EdField"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp; Education</label>
+                <textarea class="form-control EdField" placeholder="Enter here"  rows="2" ></textarea>
+    
+            </div>
+            <button class="btn-primary mt-2 btn-sm mb-3" id="eduAddbtn"> Add more </button>
+            <button class="btn-danger mt-2 btn-sm" id="eduRem-btn"> Remove </button>
+
+            
+            <!-- Projects -->
+            
+            <div class="form-group mt-2" id="projectUser">
+                <label for=" projectFieldTittle"><i class="fa fa-archive" aria-hidden="true"></i>&nbsp; Projects</label>
+                <input class="form-control projectFieldTittle"
+                 type="text" placeholder="Project tittle"  >
+                <!-- <textarea class="form-control projectFieldDesc  mt-2" placeholder="short description" rows="2" ></textarea> -->
+    
+    
+            </div>  
+            
+            <button class="btn-primary mt-2 btn-sm" id="PAdd-btn"> Add more </button>
+            <button class="btn-danger mt-2 btn-sm" id="PRRem-btn"> Remove </button>
+
+
+
+
+                <!-- Skills -->
+            
+                <div class="form-group mt-3" id="skilltUser">
+                    <label for=" skillFieldTittle"><i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        &nbsp; Skills</label>
+                    <input class="form-control skillFieldTittle"
+                     type="text" placeholder="Skill tittle"  >
+        
+                </div>  
+                
+                <button class="btn-primary mt-2 btn-sm" id="skAdd-btn"> Add more </button>
+                <button class="btn-danger mt-2 btn-sm" id="skRem-btn"> Remove </button>
+            
+
+            
+        <!-- Other interest -->
+
+        <h4 class="my-2 py-2" style="color: white;">Interests</h4>
+
+        <!-- 1-->
+
+         
+        <div class="form-group mt-2" id="interest">
+            <label for="interestField">Add your interests</label>
+            <textarea class="form-control interestField" placeholder="Enter here" rows="1" ></textarea>
+
+        </div>
+        
+        <button class="btn-primary mt-2 btn-sm" id="ITAdd-btn"> Add more </button>
+        <button class="btn-danger mt-2 btn-sm" id="ITRem-btn"> Remove </button>
+
+        
+              
+            
+        </div>
+        
+        <div class="container text-center mt-3 my-4">
+            <btn-primary class="btn btn-success btn-lg" onclick="GenerateCV()">Generate your CV</btn-primary>
+
+        </div>
+
+
+
+    </div>
+
+   </div>
+
+
+   <!-- Cv create Temp  -->
+
+
+   <div class="wrapper" id="cv-template">
+    <div class="sidebar-wrapper">
+        <div class="profile-container">
+            <img class="profile" src="https://swaraj961.github.io/images/defaultAvatar.png" alt="" id="imgT">
+            <h1 class="name" id="nameT">Swaraj</h1>
+            <h3 class="tagline" id="JobNameT">Full Stak Developer</h3>
+        </div>
+        
+        <div class="contact-container container-block">
+            <ul class="list-unstyled contact-list">
+                <li class="email"><i class="fa fa-envelope" style="margin-right: 5px;"></i><a  id="emailT" href="mailto: Anyemail@email.com">swaraj@website.com</a></li>
+                <li class="phone"><i class="fa fa-phone" style="margin-right: 5px;"></i><a  id="mobileT" href="tel:0123 456 789">0123 456 789</a></li>
+                <!-- <li class="website"></li><i class="fa fa-globe" style="margin-right: 5px;"></i><a  id="portIdT"href="index.html#" target="_blank">portfoliosite.com</a></li> -->
+                <li class="linkedin"></li><i class="fa fa-linkedin" style="margin-right: 2px;"></i><a  id="linkIdT"href="index.html#" target="_blank">linkedin.com/in</a></li>
+                <li class="github" ><i class="fa fa-github"style="margin-right: 5px;"></i><a id="gitIdT" href="index.html#" target="_blank">github.com/username</a></li>
+                <li class="home" ><i class="fa fa-home" style="margin-right: 5px;"></i><span id="addressT" href="#" target="_blank">@Address</span></li>
+            </ul>
+        </div>
+        <div class="education-container container-block">
+            <h2 class="container-block-title">Education</h2>
+            <div class="item" id="edT">
+                <h4 class="degree">Btech IT IT</h4>
+                <h5 class="meta">USICT</h5>
+                <div class="time">2018 - 2022</div>
+            </div>
+        
+        </div>
+      
+        
+      
+        
+    </div>
+    
+    <div class="main-wrapper">
+        
+        
+        <section class="section experiences-section">
+            <h2 class="section-title"><span class="icon-holder"><i class="fa fa-briefcase"></i></span>Internships</h2>
+            
+            <div class="item">
+                <div class="meta">
+                    <div class="upper-row">
+                        <h3 class="job-title" id="weT">Lead Developer</h3>
+                        <div class="time" id="TworkPeriod">2019 - Present</div>
+                    </div>
+                </div>
+        
+            </div>
+
+    
+            
+        </section>
+        
+        <section class="section projects-section">
+            <h2 class="section-title"><span class="icon-holder"><i class="fa fa-archive"></i></span>Projects</h2>
+
+            <div class="item-container" id="projSec">
+
+
+            </div>
+        
+            
+        </section>
+        
+        <section class="skills-section section">
+            <h2 class="section-title"><span class="icon-holder"><i class="fa fa-rocket"></i></span>Skills &amp; Proficiency</h2>
+            <div class="" id="skillId">        
+                <div class="item">
+                    <h3 class="level-title ">Python &amp; Django</h3>
+                                      
+                </div>
+                
+            
+                
+            </div>  
+        </section>
+
+        
+        <div class="interests-container container-block">
+        
+            <h2 class="section-title"><span class="icon-holder"><i class="fa fa-info-circle"></i></span>Interests</h2>
+            <ul class="list-unstyled interests-list " id="TInterest" style="padding-left: 18px; list-style: revert;">
+                <li>Climbing</li>
+                <li>Snowboarding</li>
+                <li>Cooking</li>
+            </ul>
+        </div>
+
+          
+        <div class="languages-container container-block">
+            <h2 class="section-title"><span class="icon-holder"><i class="fa fa-language"></i></span>Languages</h2>
+            <ul class="list-unstyled interests-list" style="padding-left: 18px; list-style: revert;">
+                <li >(Native): <span id="nativeL"class="lang-desc"></span></li>
+                <li >(Professional): <span  id="proL"class="lang-desc"></span></li>
+            
+            </ul>
+        </div>
+
+        
+        <div class="container mt-4 text-center printbtn">
+            <button class="btn btn-success" onclick="PrintCV()">Print CV </button>
+            <button class="btn btn-success" onclick="EditBack()">Edit</button>
+        </div>  
+        
+    </div>
+    
+</div>
+
+
+<footer class="footer">
+    <div class="text-center">
+        
+        
+    </div><!--//container-->
+</footer><!--//footer-->
+
+
 </body>
+<script src="js/themeChange.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+
 </html>
