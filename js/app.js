@@ -4,7 +4,7 @@ let RMworkExpBtn = document.querySelector("#weRem-btn");
 let workExpFeild = document.querySelector("#workExp");
 let workExpTime = document.getElementsByClassName("weFieldTIME");
 
-let eduAddBtn = document.querySelector("#eduAddbtn");
+let eduAddBtn = document.querySelector("#eduAddbtn"); 
 let eduRMBtn = document.querySelector("#eduRem-btn");
 
 let ProjAddBtn = document.querySelector("#PAdd-btn");
