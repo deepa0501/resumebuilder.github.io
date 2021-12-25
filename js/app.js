@@ -396,7 +396,7 @@ function company_list(){
         break;
     
     case "MECH" : 
-        document.getElementById('dep_list').innerText = "Skyy Rider Institutions \n\nZenq\n\nGSPANN technologie \n\nSai Sectretarial Services";
+        document.getElementById('dep_list').innerText = "Skyy Rider Institutions \n\nZenq\n\n GSPANN technologie \n\nSai Sectretarial Services";
         break;
 
     case "AUTOMOBILE" :
