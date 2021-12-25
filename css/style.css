@@ -35,7 +35,26 @@ label{
       border-radius: 20%;
       margin-bottom: .3rem;
     }
+.dep_row{
+      width: 100vw;
+      height: 8vh;
+      text-align: center;
 
+  }
+  #d_l{
+    text-align: right;
+    font-size: 3vh
+  }
+  #d_s{
+    text-align: left;
+    font-size: 3vh;
+  }
+#dep_list{
+    width: 100vw;
+    color: wheat;
+    font-size: medium;
+    text-align: center;
+}
 .fa-github{
 
     margin-bottom: .3rem;
