@@ -365,3 +365,44 @@ EditBack = () => {
   document.getElementById("cv-template").style.display = "none";
   document.getElementById("cv-form").style.display = "block";
 };
+
+function company_list(){
+  let dep = document.getElementById("Department").value;
+  document.getElementById('d_l').style.display="none";
+  document.getElementById('d_s').style.display="none";
+  document.getElementById('d_b').style.display="none";
+  document.getElementById('d_b').style.display="none";
+  document.getElementById('dep_hed').style.display="block";
+
+  switch(dep){
+    case "CSE" :
+      document.getElementById('dep_list').innerText = "Microsoft\n\nGoogle\n\nIBM\n\nAmazon\n\nEMC\n\nBMC\n\nPaypal\n\nOracle\n\nTCS\n\nCognizent\n\nAccenture\n\nInfosys\n\nWipro\n\nmu sigma\n\nCISCO\n\nVMWare\n\nRedhat\n\nDrupal\n\nAllscripts\n\nAmdocs\n\nSymantec\n\nAdobe\n\nZoho\n\nDruva\n\nTally\n\nFinacle from Infosys\n\nEka\n\nQuickHeal\n\nCapillary\n\nSapience\n\nPubMatic\n\nInMobi\n\nAdNear\n\nBrowserStack\n\nFreshdesk\n\nNewgen\n\nNucleus Software\n\nCRMNext\n\nRamco\n\nPersistent\n\nVserv\n\nWingify\n\nMindtree\n\nSunTec";
+      break;
+    
+    case "IT" :
+      document.getElementById('dep_list').innerText = "Microsoft\n\nGoogle\n\nIBM\n\nAmazon\n\nEMC\n\nBMC\n\nPaypal\n\nOracle\n\nTCS\n\nCognizent\n\nAccenture\n\nInfosys\n\nWipro\n\nmu sigma\n\nCISCO\n\nVMWare\n\nRedhat\n\nDrupal\n\nAllscripts\n\nAmdocs\n\nSymantec\n\nAdobe\n\nZoho\n\nDruva\n\nTally\n\nFinacle from Infosys\n\nEka\n\nQuickHeal\n\nCapillary\n\nSapience\n\nPubMatic\n\nInMobi\n\nAdNear\n\nBrowserStack\n\nFreshdesk\n\nNewgen\n\nNucleus Software\n\nCRMNext\n\nRamco\n\nPersistent\n\nVserv\n\nWingify\n\nMindtree\n\nSunTec";
+      break;
+    
+    case "ECE" :
+      document.getElementById('dep_list').innerText = "Dell India (Networking)\n\nReliance (Communications)\n\nInfotech (Analog & Digital Electronics)\n\nRedpine (Signal Processing)\n\nGeneral Electric (Electronics & Communication)\n\nTexas Instruments (Analog & Digital Electronics)\n\nMicrochip (Analog and Digital Electronics)\n\nTata tele services (Telecommunications)\n\nVodafone (Telecommunications & Networking)\n\nSamsung (Analog and Digital Communications)\n\nIntel (Analog & Digital Electronics)\n\nLG Electronics (Analog & Digital Electronics)\n\nWipro (Wireless Networking)\n\nCisco Networking (Computer Networks)";
+      break;
+    
+    case "EEE" : 
+      document.getElementById('dep_list').innerText = "ABB India Ltd\n\nBajaj electricals Ltd\n\nBharat electronics Ltd\n\nCrompton Greaves Consumers electricals Ltd\n\nExide Industries Ltd\n\nFinolex cables Ltd\n\nHavells India Ltd\n\nPolycab India Ltd\n\nSurya Roshni Ltd\n\nSchneider electric India Pvt Ltd\n\nReliance industries\n\nLarsen and toubro\n\nIndian Navy\n\nPower grid corporation of india\n\nCEAT\n\nOil and Natural Gas\n\nEmcure Pharmaceuticals\n\nIndian Oil \n\nTexas Instruments\n\nBharat Heavy electricals\n\nQualcomm\n\nLam research\n\nTata steel\n\nKONE\n\nNational Thermal Power\n\nMott MacDonald\n\nNokia\n\nAFCONS Infrastructure ";
+      break;
+
+    case "CIVIL" : 
+        document.getElementById('dep_list').innerText = "Afcons infrastructure limited\n\nPunj Lloyd\n\nNewton engineering and chemicals Ltd\n\nConsolidated construction consortium Ltd\n\nAkme projects Ltd\n\nAnant raj industries limited\n\nB Seenaiah and company Ltd\n\nBGR Energy Systems Ltd\n\nBridge and roof Co limited\n\nCoastal projects pvt ltd\n\nDSC limited\n\nCQRA\n\nEast Coast Constructions and industries Ltd\n\nGammon India Ltd\n\nGammon infrastructure projects limited\n\nGround engineering ltd\n\nRNS infrastructure Ltd\n\nRoman Tarmat Ltd\n\nStewarts and Lloyds of India Ltd\n\nS E. Constructions Ltd\n\nTantia Construction Ltd";
+        break;
+    
+    case "MECH" : 
+        document.getElementById('dep_list').innerText = "Skyy Rider Institutions \n\nZenq\n\nGSPANN technologie \n\nSai Sectretarial Services";
+        break;
+
+    case "AUTOMOBILE" :
+        document.getElementById('dep_list').innerText = "Satyam Venture engineering services\n\nGo Speedy Go\n\nFreshEngineers.com\n\nService advisor\n\nTata Motors Ltd\n\nMaruti Suzuki India Ltd\n\nMahindra and Mahindra Ltd \n\nHero motocorp Ltd\n\nBajaj Auto Ltd\n\nAshok Leyland Ltd\n\nTVS motor company Ltd\n\nEicher Motors Ltd\n\nForce Motors Ltd\n\nSML ISUZU Ltd";
+        break;
+  }
+
+}
+
