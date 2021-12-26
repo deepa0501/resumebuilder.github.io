@@ -12,7 +12,7 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="styles.css">
-<script src="fun.js"></script>
+<script src="js/app.js"></script>
 </head> 
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light ">
@@ -39,20 +39,20 @@
 			<div class="nav-item dropdown">
 				<a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle sign-up-btn">Sign up</a>
                 <div class="dropdown-menu action-form">
-					<form action="/examples/actions/confirmation.php" method="post">
+					<form action="" method="">
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Username" required="required">
+							<input type="text" class="form-control" placeholder="Username" required="required" id = "un">
 						</div>
 						<div class="form-group">
-							<input type="password" class="form-control" placeholder="Password" required="required">
+							<input type="password" class="form-control" placeholder="Password" required="required" id="up">
 						</div>
 						<div class="form-group">
-							<input type="password" class="form-control" placeholder="Confirm Password" required="required">
+							<input type="password" class="form-control" placeholder="Confirm Password" required="required" id = "ucp">
 						</div>
 						<div class="form-group">
 							<label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms &amp; Conditions</a></label>
 						</div>
-						<input type="submit" class="btn btn-primary btn-block" value="Sign up">
+						<input type="submit" class="btn btn-primary btn-block" value="Sign up" onclick="signUp()">
 					</form>
 				</div>
 			</div>
@@ -69,12 +69,7 @@
     <div class="b1 navbar-brand" id="experienced">
         <p><b>experienced</b></p>
         <a href="experienced.html"><button>create resume <br> for experienced person</button></a>
-    </div>
-	    <div class="b1 navbar-brand" id="department">
-        <p><b>View Companies</b></p>
-        <a href="department.html"><button>Companies<br> List </button></a>
-    </div>
-
+	</div>
 </div>
 </body>
 </html>
