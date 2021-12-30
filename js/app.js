@@ -382,7 +382,7 @@ function company_list(){
       document.getElementById("it").style.display="block";
       break;
 
-    case "ECE" :
+    case "ECE" : 
       document.getElementById("ece").style.display="block";
       break;
 
