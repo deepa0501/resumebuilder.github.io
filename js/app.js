@@ -387,20 +387,21 @@ function company_list(){
       break;
 
     case "EEE" :
-      document.getElementById('dep_list').innerText = "ABB India Ltd\n\nBajaj electricals Ltd\n\nBharat electronics Ltd\n\nCrompton Greaves Consumers electricals Ltd\n\nExide Industries Ltd\n\nFinolex cables Ltd\n\nHavells India Ltd\n\nPolycab India Ltd\n\nSurya Roshni Ltd\n\nSchneider electric India Pvt Ltd\n\nReliance industries\n\nLarsen and toubro\n\nIndian Navy\n\nPower grid corporation of india\n\nCEAT\n\nOil and Natural Gas\n\nEmcure Pharmaceuticals\n\nIndian Oil \n\nTexas Instruments\n\nBharat Heavy electricals\n\nQualcomm\n\nLam research\n\nTata steel\n\nKONE\n\nNational Thermal Power\n\nMott MacDonald\n\nNokia\n\nAFCONS Infrastructure ";
-      break;
+      document.getElementById("eee").style.display="block";
+			break;
 
     case "CIVIL" :
       document.getElementById("civil").style.display="block";
       break;
 
     case "MECH" :
-        document.getElementById('dep_list').innerText = "Skyy Rider Institutions \n\nZenq\n\n GSPANN technologie \n\nSai Sectretarial Services";
-        break;
+			document.getElementById("mech").style.display="block";
+      break;
+
 
     case "AUTOMOBILE" :
-        document.getElementById('dep_list').innerText = "Satyam Venture engineering services\n\nGo Speedy Go\n\nFreshEngineers.com\n\nService advisor\n\nTata Motors Ltd\n\nMaruti Suzuki India Ltd\n\nMahindra and Mahindra Ltd \n\nHero motocorp Ltd\n\nBajaj Auto Ltd\n\nAshok Leyland Ltd\n\nTVS motor company Ltd\n\nEicher Motors Ltd\n\nForce Motors Ltd\n\nSML ISUZU Ltd";
-        break;
+      document.getElementById('dep_list').innerText = "Satyam Venture engineering services\n\nGo Speedy Go\n\nFreshEngineers.com\n\nService advisor\n\nTata Motors Ltd\n\nMaruti Suzuki India Ltd\n\nMahindra and Mahindra Ltd \n\nHero motocorp Ltd\n\nBajaj Auto Ltd\n\nAshok Leyland Ltd\n\nTVS motor company Ltd\n\nEicher Motors Ltd\n\nForce Motors Ltd\n\nSML ISUZU Ltd";
+      break;
   }
   document.getElementById("dep-list").style.display="block";
 
