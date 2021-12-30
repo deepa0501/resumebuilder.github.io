@@ -370,18 +370,20 @@ function company_list(){
   document.getElementById("cv-template").style.display="none";
   let dep = document.getElementById("Department").value;
   document.getElementById('dep_hed').style.display="block";
+  document.getElementById('dep-list').style.display="block";
+
 
   switch(dep){
     case "CSE" :
-      document.getElementById('dep_list').innerText = "Microsoft\n\nGoogle\n\nIBM\n\nAmazon\n\nEMC\n\nBMC\n\nPaypal\n\nOracle\n\nTCS\n\nCognizent\n\nAccenture\n\nInfosys\n\nWipro\n\nmu sigma\n\nCISCO\n\nVMWare\n\nRedhat\n\nDrupal\n\nAllscripts\n\nAmdocs\n\nSymantec\n\nAdobe\n\nZoho\n\nDruva\n\nTally\n\nFinacle from Infosys\n\nEka\n\nQuickHeal\n\nCapillary\n\nSapience\n\nPubMatic\n\nInMobi\n\nAdNear\n\nBrowserStack\n\nFreshdesk\n\nNewgen\n\nNucleus Software\n\nCRMNext\n\nRamco\n\nPersistent\n\nVserv\n\nWingify\n\nMindtree\n\nSunTec";
+      document.getElementById("cse").style.display="block";
       break;
 
     case "IT" :
-      document.getElementById('dep_list').innerText = "Microsoft\n\nGoogle\n\nIBM\n\nAmazon\n\nEMC\n\nBMC\n\nPaypal\n\nOracle\n\nTCS\n\nCognizent\n\nAccenture\n\nInfosys\n\nWipro\n\nmu sigma\n\nCISCO\n\nVMWare\n\nRedhat\n\nDrupal\n\nAllscripts\n\nAmdocs\n\nSymantec\n\nAdobe\n\nZoho\n\nDruva\n\nTally\n\nFinacle from Infosys\n\nEka\n\nQuickHeal\n\nCapillary\n\nSapience\n\nPubMatic\n\nInMobi\n\nAdNear\n\nBrowserStack\n\nFreshdesk\n\nNewgen\n\nNucleus Software\n\nCRMNext\n\nRamco\n\nPersistent\n\nVserv\n\nWingify\n\nMindtree\n\nSunTec";
+      document.getElementById("it").style.display="block";
       break;
 
     case "ECE" :
-      document.getElementById('dep_list').innerText = "Dell India (Networking)\n\nReliance (Communications)\n\nInfotech (Analog & Digital Electronics)\n\nRedpine (Signal Processing)\n\nGeneral Electric (Electronics & Communication)\n\nTexas Instruments (Analog & Digital Electronics)\n\nMicrochip (Analog and Digital Electronics)\n\nTata tele services (Telecommunications)\n\nVodafone (Telecommunications & Networking)\n\nSamsung (Analog and Digital Communications)\n\nIntel (Analog & Digital Electronics)\n\nLG Electronics (Analog & Digital Electronics)\n\nWipro (Wireless Networking)\n\nCisco Networking (Computer Networks)";
+      document.getElementById("ece").style.display="block";
       break;
 
     case "EEE" :
@@ -389,8 +391,8 @@ function company_list(){
       break;
 
     case "CIVIL" :
-        document.getElementById('dep_list').innerText = "Afcons infrastructure limited\n\nPunj Lloyd\n\nNewton engineering and chemicals Ltd\n\nConsolidated construction consortium Ltd\n\nAkme projects Ltd\n\nAnant raj industries limited\n\nB Seenaiah and company Ltd\n\nBGR Energy Systems Ltd\n\nBridge and roof Co limited\n\nCoastal projects pvt ltd\n\nDSC limited\n\nCQRA\n\nEast Coast Constructions and industries Ltd\n\nGammon India Ltd\n\nGammon infrastructure projects limited\n\nGround engineering ltd\n\nRNS infrastructure Ltd\n\nRoman Tarmat Ltd\n\nStewarts and Lloyds of India Ltd\n\nS E. Constructions Ltd\n\nTantia Construction Ltd";
-        break;
+      document.getElementById("civil").style.display="block";
+      break;
 
     case "MECH" :
         document.getElementById('dep_list').innerText = "Skyy Rider Institutions \n\nZenq\n\n GSPANN technologie \n\nSai Sectretarial Services";
@@ -406,8 +408,11 @@ function company_list(){
 function backToResume(){
   document.getElementById('dep-list').style.display="none";
   document.getElementById("cv-template").style.display="block";
-}
+  let dep = document.getElementById("Department").value;
 
+  const xy = dep.toLowerCase();
+  document.getElementById(xy).style.display="none";
+}
 function login(){
     let u = document.getElementById("username_l").value;
     let p = document.getElementById("password_l").value;
