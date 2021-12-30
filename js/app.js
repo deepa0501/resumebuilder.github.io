@@ -388,19 +388,19 @@ function company_list(){
 
     case "EEE" :
       document.getElementById("eee").style.display="block";
-			break;
+      break;
 
     case "CIVIL" :
       document.getElementById("civil").style.display="block";
       break;
 
     case "MECH" :
-			document.getElementById("mech").style.display="block";
+      document.getElementById("mech").style.display="block";
       break;
 
 
     case "AUTOMOBILE" :
-      document.getElementById('dep_list').innerText = "Satyam Venture engineering services\n\nGo Speedy Go\n\nFreshEngineers.com\n\nService advisor\n\nTata Motors Ltd\n\nMaruti Suzuki India Ltd\n\nMahindra and Mahindra Ltd \n\nHero motocorp Ltd\n\nBajaj Auto Ltd\n\nAshok Leyland Ltd\n\nTVS motor company Ltd\n\nEicher Motors Ltd\n\nForce Motors Ltd\n\nSML ISUZU Ltd";
+      document.getElementById("automobile").style.display="block";
       break;
   }
   document.getElementById("dep-list").style.display="block";
