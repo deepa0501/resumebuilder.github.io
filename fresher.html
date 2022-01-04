@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Resume-Builder</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="/css/bootstrap.min.css">  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Theme-3.css"  id="theme">     
+</head>
+<body>
+
+
+    
+   <div class="container" id="cv-form">
+    <h1 class="text-center my-2" style="color: white;">Resume-Builder</h1>
+    <p class="text-center" style="color: white;">Fresher </p>
+
+    <!-- Grid 12 -->
+    <div class="row">
+
+        
+        <div class="col-md-6">
+        <!-- 6 grid  column1 -->
+
+        <h3 style="color: white;">Personal Information</h3>
+
+
+        <!-- photo -->
+        <div class="form-group py-2 ">
+
+        <label for="photocv">Select your photo</label>   
+        <input type="file" class="form-control" id="photocvfield" style="padding-bottom: 2.5rem; padding-top: 10px" required>
+        
+        </div>
+
+
+
+        <div class="form-group mt-2">
+            <label for="nameField">Your Name</label>
+            <input type="text" class="form-control" id="nameField" placeholder="Enter here">
+
+        </div>
+        <div class="form-group">
+            <label for="emailField">Your Email</label>
+            <input type="email" class="form-control" id="emailField" placeholder="Enter here">
+
+        </div>
+        <div class="form-group mt-2">
+            <label for="contactField">Contact No</label>
+            <input type="number" class="form-control" id="contactField" placeholder="Enter here">
+
+        </div>
+        <div class="form-group mt-2">
+            <label for="addressField">Your Address</label>
+            <textarea class="form-control mb-5" id="addressField" placeholder="Enter here"  ></textarea>
+
+        </div>
+        <div class="form-group mt-2">
+            <label for="contactField">Department : </label>
+            <select id="Department" name="Department" class="form-select" style="width: 100%;height: 30px;">
+                <option value="na"> select your department     </option>
+                <option value="CSE">CSE</option>
+                <option value="IT">IT</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="CIVIL">CIVIL</option>
+                <option value="MECH">MECH</option>
+                <option value="AUTOMOBILE">AUTOMOBILE</option>
+              </select>
+
+        </div>
+
+        <h4 class="my-3" style="color: white;">Social Links</h4>
+
+        <!-- github -->
+       
+        <div class="form-group">
+
+            <label for="gitField">Github</label>
+            <i class="fa fa-github" aria-hidden="true" style="color: white"></i>
+            <input type="text" class="form-control" id="gitField" placeholder="Enter here">
+
+        </div>
+
+        <!-- linkedin -->
+        <div class="form-group my-2">     
+                <label for="linkedinField">Linkedin </label>
+                <i class="fa fa-linkedin" aria-hidden="true" style="background: #007bb5 ;padding: 5px;"></i>
+            <input type="text" class="form-control" id="linkedinField" placeholder="Enter here">
+
+        </div>
+
+        <!-- portfolio -->
+
+
+
+     <!-- Languages -->
+
+     <h4 class="my-3 py-2" style="color: white;">Languages</h4>
+
+     <!-- L1 -->
+    
+     <div class="form-group">
+
+         <label for="NatLField">Native</label>
+         <i class="fa fa-language" aria-hidden="true" style="color: white"></i>
+         <input type="text" class="form-control" id="NatLField"" placeholder="Enter here">
+
+     </div>
+
+     <!-- professional -->
+     <div class="form-group">
+
+         <label for="proLField">Professional</label>
+         <i class="fa fa-language" aria-hidden="true" style="color: white"></i>
+         <input type="text" class="form-control" style="padding-top: 10px;" id="proLField" placeholder="Enter here">
+
+     </div>    
+        
+
+        
+    </div>
+        <!-- 6 grid column2 -->
+
+        <div class="col-md-6">
+            
+            <h3 style="color : white">Professional Information</h3>
+    
+            <!-- job tittle -->
+            <div class="form-group " id = "hide_js">
+                <label for="jobtitleField">Job Title</label>
+                <input class="form-control" id="jobtitleField" placeholder="Enter here"  >
+    
+            </div>  
+
+            <!-- work exp -->
+            
+            <div class="form-group mt-2" id="workExp">
+                <label for="weField"><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp; Internships</label>
+                <textarea class="form-control weField" placeholder="Role at company" rows="2" ></textarea>
+                <input class="form-control weFieldTIME mt-2"
+                maxlength="20 type="text"  placeholder="TimePeriod"  >
+    
+    
+            </div>  
+            
+            <button class="btn-primary mt-2 btn-sm" id="weAdd-btn"> Add more </button>
+            <button class="btn-danger mt-2 btn-sm" id="weRem-btn"> Remove </button>
+
+
+             <!-- Education -->
+            <div class="form-group mt-3" id="education">
+                <label for="EdField"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp; Education</label>
+                <textarea class="form-control EdField" placeholder="Enter here"  rows="2" ></textarea>
+    
+            </div>
+            <button class="btn-primary mt-2 btn-sm mb-3" id="eduAddbtn"> Add more </button>
+            <button class="btn-danger mt-2 btn-sm" id="eduRem-btn"> Remove </button>
+
+            
+            <!-- Projects -->
+            
+            <div class="form-group mt-2" id="projectUser">
+                <label for=" projectFieldTittle"><i class="fa fa-archive" aria-hidden="true"></i>&nbsp; Projects</label>
+                <input class="form-control projectFieldTittle"
+                 type="text" placeholder="Project tittle"  >
+                <!-- <textarea class="form-control projectFieldDesc  mt-2" placeholder="short description" rows="2" ></textarea> -->
+    
+    
+            </div>  
+            
+            <button class="btn-primary mt-2 btn-sm" id="PAdd-btn"> Add more </button>
+            <button class="btn-danger mt-2 btn-sm" id="PRRem-btn"> Remove </button>
+
+
+
+
+                <!-- Skills -->
+            
+                <div class="form-group mt-3" id="skilltUser">
+                    <label for=" skillFieldTittle"><i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        &nbsp; Skills</label>
+                    <input class="form-control skillFieldTittle"
+                     type="text" placeholder="Skill tittle"  >
+        
+                </div>  
+                
+                <button class="btn-primary mt-2 btn-sm" id="skAdd-btn"> Add more </button>
+                <button class="btn-danger mt-2 btn-sm" id="skRem-btn"> Remove </button>
+            
+
+            
+        <!-- Other interest -->
+
+        <h4 class="my-2 py-2" style="color: white;">Interests</h4>
+
+        <!-- 1-->
+
+         
+        <div class="form-group mt-2" id="interest">
+            <label for="interestField">Add your interests</label>
+            <textarea class="form-control interestField" placeholder="Enter here" rows="1" ></textarea>
+
+        </div>
+        
+        <button class="btn-primary mt-2 btn-sm" id="ITAdd-btn"> Add more </button>
+        <button class="btn-danger mt-2 btn-sm" id="ITRem-btn"> Remove </button>
+
+        </div>
+        
+        <div class="container text-center mt-3 my-4">
+            <btn-primary class="btn btn-success btn-lg" onclick="GenerateCV()">Generate your CV</btn-primary>
+
+        </div>
+
+
+
+    </div>
+
+   </div>
+
+
+   <!-- Cv create Temp  -->
+
+
+   <div class="wrapper" id="cv-template">
+    <div class="sidebar-wrapper">
+        <div class="profile-container">
+            <img class="profile" src="https://swaraj961.github.io/images/defaultAvatar.png" alt="" id="imgT">
+            <h1 class="name" id="nameT">Deepa</h1>
+            <h3 class="tagline" id="JobNameT">Full Stak Developer</h3>
+        </div>
+        
+        <div class="contact-container container-block">
+            <ul class="list-unstyled contact-list">
+                <li class="email"><i class="fa fa-envelope" style="margin-right: 5px;"></i><a  id="emailT" href="mailto: Anyemail@email.com">deepa@resume-builder.com</a></li>
+                <li class="phone"><i class="fa fa-phone" style="margin-right: 5px;"></i><a  id="mobileT" href="tel:0123 456 789">0123 456 789</a></li>
+                <!-- <li class="website"></li><i class="fa fa-globe" style="margin-right: 5px;"></i><a  id="portIdT"href="index.html#" target="_blank">portfoliosite.com</a></li> -->
+                <li class="linkedin"></li><i class="fa fa-linkedin" style="margin-right: 2px;"></i><a  id="linkIdT"href="index.html#" target="_blank">linkedin.com/in</a></li>
+                <li class="github" ><i class="fa fa-github"style="margin-right: 5px;"></i><a id="gitIdT" href="index.html#" target="_blank">github.com/username</a></li>
+                <li class="home" ><i class="fa fa-home" style="margin-right: 5px;"></i><span id="addressT" href="#" target="_blank">@Address</span></li>
+            </ul>
+        </div>
+        <div class="education-container container-block">
+            <h2 class="container-block-title">Education</h2>
+            <div class="item" id="edT">
+                <h4 class="degree">Btech CSE CSE</h4>
+                <h5 class="meta">MVSR</h5>
+                <div class="time">2019 - 2023</div>
+            </div>
+        
+        </div>
+      
+        
+      
+        
+    </div>
+    
+    <div class="main-wrapper">
+        
+        
+        <section class="section experiences-section">
+            <h2 class="section-title"><span class="icon-holder"><i class="fa fa-briefcase"></i></span>Internships</h2>
+            
+            <div class="item">
+                <div class="meta">
+                    <div class="upper-row">
+                        <h3 class="job-title" id="weT">Lead Developer</h3>
+                        <div class="time" id="TworkPeriod">2020 - Present</div>
+                    </div>
+                </div>
+        
+            </div>
+
+    
+            
+        </section>
+        
+        <section class="section projects-section">
+            <h2 class="section-title"><span class="icon-holder"><i class="fa fa-archive"></i></span>Projects</h2>
+
+            <div class="item-container" id="projSec">
+
+
+            </div>
+        
+            
+        </section>
+        
+        <section class="skills-section section">
+            <h2 class="section-title"><span class="icon-holder"><i class="fa fa-rocket"></i></span>Skills &amp; Proficiency</h2>
+            <div class="" id="skillId">        
+                <div class="item">
+                    <h3 class="level-title ">Python &amp; Django</h3>
+                                      
+                </div>
+                
+            
+                
+            </div>  
+        </section>
+
+        
+        <div class="interests-container container-block">
+        
+            <h2 class="section-title"><span class="icon-holder"><i class="fa fa-info-circle"></i></span>Interests</h2>
+            <ul class="list-unstyled interests-list " id="TInterest" style="padding-left: 18px; list-style: revert;">
+                <li>Climbing</li>
+                <li>Snowboarding</li>
+                <li>Cooking</li>
+            </ul>
+        </div>
+
+          
+        <div class="languages-container container-block">
+            <h2 class="section-title"><span class="icon-holder"><i class="fa fa-language"></i></span>Languages</h2>
+            <ul class="list-unstyled interests-list" style="padding-left: 18px; list-style: revert;">
+                <li >(Native): <span id="nativeL"class="lang-desc"></span></li>
+                <li >(Professional): <span  id="proL"class="lang-desc"></span></li>
+            
+            </ul>
+        </div>
+        
+        <div class="container mt-4 text-center printbtn">
+            <button class="btn btn-success" onclick="PrintCV()">Print CV </button>
+            <button class="btn btn-success" onclick="EditBack()">Edit</button>
+            <button class="btn btn-success" onclick="company_list()">View Companies</button>
+
+        </div>  
+    </div>    
+</div>
+
+<footer class="footer">
+    <div class="text-center">
+        
+        
+    </div><!--//container-->
+</footer><!--//footer-->
+<div id="dep-list" style="width: 100vw;display: none;">  
+    <h3 id = "dep_hed" style="text-align: center;; color: red">
+        <br>
+        Companies you can apply for :
+    </h3>
+    <br>
+    <div>
+        <pre id = "cse" style="text-align: left;display:none;    width: 100vw;color: wheat;font-size: medium;">
+                PAYPAL :
+                
+                &bull; The candidates who are completed in BE/ B.Tech, MCA Branches Eligible to apply.
+                <hr>
+                ORACLE :
+
+                &bull; Students with more than 60 percent of marks consistently in his education are eligible
+                for recruitment.
+                &bull; Up to 1 year of gap is allowed in the study period of candidate.
+                <hr>
+                TCS :
+
+                &bull; BE/B.Tech/MCA/M.Sc/MS with minimum 3 years of relevant experience post
+                Qualification IT- Experience
+                &bull; Bsc Graduates with minimum 3.5 years of relevant experience post qualification
+                IT Experience
+                <hr>
+                COGNIZENT :
+
+                &bull; A candidate must have more than 60% marks in 10th and 12th (or diploma).
+                &bull; A candidate must have a minimum of 60% marks in graduation.
+                &bull; A maximum gap of 1 year is permissible after HSC(12th) and not after SSC(10th) or
+                in between semesters of graduation.
+                <hr>
+                ACCENTURE :
+
+                &bull; Class 10th Standard : 60% or Above
+                &bull; Class 12th Standard : 60% or Above
+                &bull; College Graduation : 60% or Above 6.5 CGPA
+
+                Eligible Branches : All Engineering Branches
+                Backlog : No active backlog
+                <hr>
+                INFOSYS :
+
+                &bull; The candidates should have a score of a minimum of 60 per cent in their class 10
+                and 12 board exams.
+                &bull; In their graduation exam, the candidate should have 65 per cent marks or a CGPA
+                of 6.5 in their graduation exam.
+                &bull; A maximum gap of two years is allowed in education.
+                &bull; The candidate should be B.E. / B. Tech passed in
+                CSE/ECE/IT/CIVIL/ME/EEE/Automobile/Aeronautical etc.
+                &bull; Those candidates who have done M.Sc. graduation in IT and Computer Science
+                from a recognized Indian University can also apply for the job.
+                &bull; MCA graduates are also eligible to apply for the Infosys jobs of freshers.
+                &bull; For the eligibility of the year 2021, the candidates should have passed their
+                engineering exam in 2020.
+                <hr>
+                WIPRO :
+
+                &bull; A candidate must have more than 60% marks in 10th and 12th (or diploma).
+                &bull; A candidate must have a minimum of 60% marks in graduation and Post Graduation ( if
+                applicable).
+                &bull; A candidate should not have any pending backlogs at the time of appearing for Wipro
+                selection process.
+                <hr>
+                MU SIGMA :
+
+                &bull; B.E / B.Tech in any discipline (CSE/ECE/IT/EEE/TELECOM/M.E/EIE/IE/IS, etc).
+                <hr>
+                CISCO :
+
+                Any Graduates/ Post Graduates, BE, B.Tech, MBA, MCA, ME, M.Tech
+                VMWare -
+                &bull; Educational Qualification: BE/B.Tech/ME/M.Tech - CSE,IT,ECE
+                &bull; 60% or 6.5 GPA and above throughout without any running backlogs
+                &bull; 2020/2021 graduates
+                <hr>
+                RED HAT :
+
+                &bull; Educational Qualification: BE/B.Tech - CSE,IT,ECE
+                &bull; 60% or 6.5 GPA and above throughout without any running backlogs
+                <hr>
+                ALLSCRIPTS :
+
+                &bull; Educational Qualification: BE/B. Tech/B. Sc/M. Sc/MCA.
+                &bull; 60% or 6.5 GPA and above throughout without any running backlogs.
+                <hr>
+                AMDOCS :    
+
+                &bull; Amdocs IT company is going to recruit candidates for graduates through off campus.
+                &bull; The candidates who are completed in BE / B.Tech, ME / M.Tech, MCA Branches Eligible
+                to apply.
+                <hr>
+                SYMANTEC :
+
+                &bull; 70 percent or above in B.Tech, Class X and XII.
+                &bull; No backlogs at the time of interview
+                <hr>
+                ADOBE :
+
+                &bull; Students who are secured with 60% and above in their academic
+                profiles in 10th standard, Intermediate, te, and BE/ Btech are eligible
+                for Adobe off Campus Drive.
+                &bull; Moreover, candidates should not have any Backlog.
+                <hr>
+                ZOHO :
+
+                &bull; The candidates who are completed in BE/ B.Tech Branches Eligible to apply
+                <hr>
+                DRUVA :
+
+                &bull; Educational Qualification: BE/B.Tech – CSE,IT,ECE
+                &bull; 60% or 6.5 GPA and above throughout without any running backlogs
+                    <hr>
+                TALLY :
+
+                &bull; You must have completed secondary education, i.e. 10+2 or equivalent
+                (preferably in Commerce stream though candidates from any stream can apply)
+                &bull; Basic knowledge of Business Management and Accounting is preferred.
+                &bull; You can also apply for this course after you finish your graduation.
+                <hr>
+                FINACLE FROM INFOSYS :
+
+                &bull; B.Tech / B.E
+                &bull; Branch : Computer Science / Electronics / ECE / EI / Instrumentation /
+                Information Science / IT
+                <hr>
+                EKA :
+
+                &bull; 2021 / 20 BE / BTech (All branches)
+                <hr>
+                QUICK HEAL :
+
+                &bull; Educational Qualification: BE/B.Tech/ME/M.Tech – CSE,IT,ECE
+                &bull; 60% or 6.5 GPA and above throughout without any running backlogs
+                <hr>
+                CAPILLARY :
+
+                &bull; Educational Qualification: BE/B.Tech/MCA – CSE,IT,ECE
+                &bull; 60% or 6.5 GPA and above throughout without any running backlogs
+                <hr>
+                Pubmatic :
+
+                &bull; company is going to recruit candidates for graduates through off campus. The candidates
+                who are completed in BE / B.Tech , ME / M.Tech, MCA, Any Degree Branches Eligible to
+                apply.
+                <hr>
+                INMOBI :
+
+                &bull; Educational Qualification: BE/B.Tech/ME/M.Tech - CSE,IT,ECE
+                &bull; 60% or 6.5 GPA and above throughout without any running backlogs
+                <hr>
+                BROWSERSTACK :
+
+                &bull; Academic Criteria : 70 percent or above in B. Tech, Class X and XII.
+                <hr>
+                NEWGEN :
+
+                &bull; Educational Qualification: BE/B. Tech/ME/M. Tech - CSE,IT,ECE.
+                &bull; 60% or 6.5 GPA and above throughout without any running backlogs.
+                <hr>
+                NUCLEUS SOFTWARE :
+
+                &bull; Only For Unplaced Students of 2017 Passing Out Batch b) B.Tech ( CS/ IT / EC / EN / ME ) & MCA, c) Xth -
+                60% & Above XIIth - 60% & Above Graduation - 60% & Above Post Graduation - 60% & Above
+                <hr>
+                CRMNEXT :
+
+                &bull; Educational Qualification: BE/B. Tech - CSE,IT,ECE.
+                &bull; 60% or 6.5 GPA and above throughout without any running backlogs.
+                <hr>
+                RAMCO :
+
+                &bull; Educational Qualification: BE/B.Tech/ME/M.Tech/M.Sc/MCA
+                &bull; 60% or 6.5 GPA and above throughout without any running backlogs
+                <hr>
+                PERSISTENT :
+
+                &bull; BE / B.Tech – (CS or IT/ECE/E&TC)
+                &bull; Year of passing 2022
+                &bull; Female candidates only
+                <hr>
+                WINGIFY :
+
+                &bull; Educational Qualification: BE/B. Tech - CSE,IT,ECE.
+                &bull; 60% or 6.5 GPA and above throughout without any running backlogs.
+                <hr>
+                SUNTECH :
+
+                &bull; Should be completing B.E, B.Tech / M.E, M.Tech (Computer Science or Information
+                Technology) in the year 2019 are only eligible
+                &bull; Should have minimum marks of 70% throughout your academics
+                &bull; Should not have any backlogs at-present
+                <hr>
+        </pre>
+        <pre id = "it" style="text-align: left;display:none;    width: 100vw;color: wheat;font-size: medium;">
+            Microsoft:
+
+            &bull; Minimum percentage of 70% in Class X, XII
+            &bull; Minimum 6 CGPA in the pursuing degree
+            &bull; No backlogs at the time of applying 
+            <hr>
+            google:
+
+            &bull; The candidate must have secured 60% or above in 10th ,12th. 
+            &bull; A Bachelor's degree in Engineering with a good academic record. 
+            <hr>
+            IBM :
+
+            &bull; Class 10th standard	60% or above
+            &bull; Graduation	65% or above or 6.5 CGPA
+            <hr>
+            amazon :
+
+            &bull; Amazon doesn’t have any percentage criteria for 10th, 12th and graduation.
+            &bull; A candidate should not have any pending backlogs at the time of appearing for Amazon selection process.
+            <hr>
+            Emc :
+
+            &bull; B.E/B.Tech in CS/ECE/IS/IT with 60% through out. Other straems will not be considerded
+            &bull; 10+2/XII with minimum of 60% aggregate 
+            <hr>
+            BMC :
+
+            &bull; Candidates must have passed Class 12th.
+            &bull; Candidates appeared for 10+2 and waiting for results can apply .
+            <hr>
+            Paypal :
+
+            &bull; A final year engineering student graduating in 2021 from any stream.
+            &bull; CGPA 8 and above.
+            <hr>
+            Oracle :
+
+            &bull; Students with more than 60 percent of marks .
+            <hr>
+            cognizant :
+
+            &bull; A candidate must have more than 60% marks in 10th and 12th (or diploma).
+            &bull; A candidate must have a minimum of 60% marks in graduation.
+            <hr>
+            TCS :
+
+            &bull; 60% or 6 CGPA in each of Class Xth, Class XIIth, Graduation and Post-Graduation examination is required.
+            <hr>
+            accenture :
+
+            &bull; Class 10th Standard : 60% or Above
+            &bull; Class 12th Standard : 60% or Above
+            &bull; College Graduation : 60% or Above 6.5 CGPA
+            <hr>
+            infosys :
+
+            &bull; A candidate must have more than 60% marks in 10th and 12th (or diploma). 
+            &bull; A candidate must have a minimum of 65% marks or CGPA 6.5 in graduation. 
+            <hr>
+            wipro :
+
+            &bull; 60% marks in 10th and 12th (or diploma).
+            &bull; 60% marks in graduation and Post Graduation ( if applicable).
+            <hr>
+            mu sigma :
+
+            &bull; Class 10th and 12th result:60%
+            &bull; Graduation:60% or 6.0 CGPA
+            &bull; Degree:BE, B.Tech, ME, M.Tech, M.Sc (CS/ IT), MCA,  BCA
+            <hr>
+            CISCO :
+
+            &bull; B.E/ B.Tech/ B.A/ B.Com and other Graduates, as well as Postgraduates, are eligible.
+            &bull; No backlogs.
+            &bull; A minimum of 60% in X, XII standards, Graduation, and Post graduation.
+            <hr>
+            vm  ware:
+
+            &bull; BE/ B.Tech – CS/ IS/ IT with overall (Xth, XIIth and Graduation) (60% and above in Engineering)
+            &bull; 2021 graduating with no current backlogs.
+            <hr>
+            redhat:
+
+            &bull; Educational Qualification: BE/B.Tech - CSE,IT,ECE
+            &bull; 60% or 6.5 GPA and above throughout without any running backlog.
+            <hr>
+            allscripts:
+
+            &bull; ducational Qualification: BE/B. Tech/B. Sc/M. Sc/MCA.
+            &bull; 60% or 6.5 GPA and above throughout without any running backlogs.
+            <hr>
+            amdocs:
+
+            &bull; B.E/ B.Tech/ M.Tech/ M.E/ MCA
+            &bull; Stream – ENTC, CSE, IT, ENC Only
+            &bull; Throughout 60% with no year down
+            <hr>
+            symantec:
+
+            &bull;  Educational Qualification: BE/B.Tech/ME/M.Tech – CSE,IT,ECE
+            &bull; 60% or 6.5 GPA and above throughout without any running backlogs
+            <hr>
+            adobe:
+
+            &bull;  BE / B.Tech / ME / M.Tech in any Disciplines.
+            &bull;  65% throughout (Class X, XII and Graduation).
+            <hr>
+            zoho:
+
+            &bull;  No Percentage criteria. ( Selection on the basis of performance in Assessment)
+            &bull; There is no strict rule regarding the backlogs. You can apply for the exam even with a backlog.
+            <hr>
+            druva:
+
+            &bull; Educational Qualification: BE/B.Tech – CSE,IT,ECE
+            &bull; 60% or 6.5 GPA and above throughout without any running backlogs
+            <hr>
+            finacle from infosys:
+
+            &bull; B.Tech / B.E
+            &bull; Branch : Computer Science / Electronics / ECE / EI / Instrumentation / Information Science / IT
+            &bull;  Year of Passing :2019/2020/2021
+            <hr>
+            eka:
+
+            &bull; 2021 / 20 BE / BTech (All branches)
+            &bull;  Good pH score.
+            &bull; Good academic track recor
+            <hr>
+            quickHeal:
+
+            &bull; Educational Qualification: BE/B.Tech/ME/M.Tech – CSE,IT,ECE
+            &bull; 60% or 6.5 GPA and above throughout without any running backlogs.
+            <hr>
+            capillary:
+
+            &bull; Educational Qualification: BE/B.Tech/MCA – CSE,IT,ECE
+            &bull; 60% or 6.5 GPA and above throughout without any running backlogs
+            <hr>
+            sapience:
+
+            &bull; Educational Qualification:BE/B. Tech/ME/M. Tech/M. Sc.
+            &bull; 60% or 6.5 GPA and above throughout without any running backlogs.
+            <hr>
+            pubMatic:
+
+            &bull; Bachelor’s degree in Engineering (CS/ IT/ EE/ E&TC) or Master’s degree in Computer Science (MCS/ MCA) 
+            &bull; Familiarity with UI technologies like HTML, JavaScript, and CSS
+            <hr>
+            inmobi:
+
+            &bull; Educational Qualification: BE/B. Tech/ME/M. Tech - CSE,IT,ECE.
+            &bull;  60% or 6.5 GPA and above throughout without any running backlogs.
+            <hr>
+            adNear:
+
+            &bull; A candidate must have more than 60% marks in 10th and 12th (or diploma).
+            &bull; A candidate must have a minimum of 60% marks or CGPA 6.0 in graduation.
+            <hr>
+            BrowserStack:
+
+            &bull; 70 percent or above in B.Tech, Class X and XII.
+            &bull; No backlogs at the time of interview
+            <hr>
+            Freshdesk:
+
+            &bull; B.E, B.Tech, ME, M.Tech, M.Sc, MCA with B.Sc, BCA, BA or any other Graduation or PG Courses.
+            &bull; Every applicant should have minimum 60% aggregate is mandatory.
+            <hr>
+            Newgen:
+
+            &bull; Educational Qualification: BE/B. Tech/ME/M. Tech - CSE,IT,ECE.
+            &bull; 60% or 6.5 GPA and above throughout without any running backlogs
+            <hr>
+            Nucleus software:
+
+            &bull; Candidate must be a B. Tech, BCA, MCA, BE student.
+            &bull; 65 percent throughout (Class X, XII and Graduation).
+            <hr>
+            CRMNext:
+
+            &bull; Educational Qualification: BE/B. Tech - CSE,IT,ECE.
+            &bull; 60% or 6.5 GPA and above throughout without any running backlogs.
+            <hr>
+            ramco:
+
+            &bull; Educational Qualification: BE/B.Tech/ME/M.Tech/M.Sc/MCA
+            &bull; 60% or 6.5 GPA and above throughout without any running backlogs
+            <hr>
+            persistent:
+
+            &bull; Percentage criteria : need to have 60 % throughout in academics (10th-60%, 12th -60% & BCA-60%)
+            <hr>
+            vserv:
+
+            &bull; 60 percent or above in B.Tech, Class X and XII.
+            &bull;  No backlogs at the time of interview
+            <hr>
+            wingify:
+
+            &bull; Educational Qualification: BE/B. Tech - CSE,IT,ECE.
+            &bull; 60% or 6.5 GPA and above throughout without any running backlogs.
+            <hr>
+            Mindfree:
+
+            &bull; Class 10th &12th Percentage : 60% or Above
+            &bull;  College Graduation : CGPA 6.5 or Above
+            <hr>
+            SunTec:
+
+            &bull; Graduation form B.E/ B.Tech with 60% marks
+            <hr>
+        </pre>
+    <pre id = "ece" style="text-align: left;display:none;    width: 100vw;color: wheat;font-size: medium;">
+        Dell India (Networking) : 
+
+        &bull; Minimum percentage of 60% or cgpa of 6.5 is to be maintained
+        <hr>
+        Reliance (Communications) : 
+        
+        &bull; Minimum percentage of 60% or cgpa of 6.5 is to be maintained
+        <hr>
+        Infotech (Analog & Digital Electronics) : 
+
+        &bull; 60% in be,X,XII
+        <hr>
+        Redpine (Signal Processing) : 
+        
+        &bull; they conduct separate exam
+        <hr>
+        General Electric (Electronics & Communication) : 
+        
+        &bull; Minimum percentage of 60% or cgpa of 6.5 is to be maintained
+        <hr>
+        Texas Instruments (Analog & Digital Electronics) : 
+        
+        &bull; Minimum percentage of 70% or cgpa of 7.8 is to be maintained
+        <hr>
+        Microchip (Analog and Digital Electronics) : 
+
+        &bull; 6.5 gpa in btech
+        <hr>
+        Tata tel services (Telecommunications) : 
+        
+        &bull; Minimum percentage of 60% or cgpa of 6.5 is to be maintained
+        <hr>
+        Vodaphone : 
+         
+        &bull; 7.0 gpa should be maintained 
+        &bull; Telecommunications & Networking - Minimum percentage of 60% or cgpa of 6.5 is to be maintained
+        <hr>
+        Samsung (Analog and Digital Communications) : 
+        
+        &bull; Minimum percentage of 60% or cgpa of 6.5 is to be maintained
+        <hr>
+        Intel (Analog & Digital Electronics) : 
+        
+        &bull; Minimum percentage of 60% or cgpa of 6.5 is to be maintained
+        <hr>
+        LG Electronics (Analog & Digital Electronics) : 
+        
+        &bull; Minimum percentage of 60% or cgpa of 6.5 is to be maintained
+        <hr>
+        Wipro : 
+        
+        &bull; Wireless Networking
+        <hr>
+        Cisco Networking (Computer Networks) : 
+        
+        &bull; Minimum percentage of 60% or cgpa of 6.5 is to be maintained
+        <hr>
+    </pre>
+    <pre id = "civil" style="text-align: left;display:none;    width: 100vw;color: wheat;font-size: medium;">
+        BGR ENERGY SYSTEMS LTD : 
+
+        &bull; CA/ICWAI with 10 - 15 years experience in handling Accounts, Insurance and Taxation.
+        &bull;Desired Profile: Should have experience in finalization of Accounts and coordination with Audit
+        &bull;in large Manufacturing / EPC companies.
+        <hr>
+        BRIDGE AND ROOF CO LIMITED :
+
+        &bull;2 years full-time (Regular Course) in Post Graduate Degree/ Diploma in Management with
+        &bull;specialization in HR/Personnel/ Industrial Relations/ MSW with minimum 55% marks in
+        aggregate.
+        <hr>
+        GROUND ENGINEERING LTD :
+
+        &bull;The qualification criteria required to work as a Geotechnical Engineer is Bachelor's degree in Civil
+        &bull;Engineering or Master's degree with a specialization in Geotechnical or soil and Foundation
+        Engineering.
+        <hr>
+    </pre>
+    <pre id = "eee" style="text-align: left;display:none;    width: 100vw;color: wheat;font-size: medium;">
+		ABB India Ltd : 
+		
+		&bull; Pg is mandatory
+		<hr>
+		Bajaj electricals Ltd : 
+		
+		&bull; 6.5 cgpa in be,X,XII
+		<hr>
+		Bharat electronics Ltd : 
+		
+		&bull; Minimum of 6.0 cgpa through all semesters
+		<hr>
+		Crompton Greaves Consumers electricals Ltd : 
+		
+		&bull; Minimum of 6.0 cgpa through all semesters
+		<hr>
+		Exide Industries Ltd : 
+		
+		&bull; Minimum of 60% should be present overall , at the end of btech
+		<hr>
+		Finolex cables Ltd : 
+		
+		&bull; Pg is mandatory
+		<hr>
+		Havells India Ltd : 
+		
+		&bull; Minimum of 60% should be present overall , at the end of btech
+		<hr>
+		Polycab India Ltd : 
+		
+		&bull; Minimum of 6.0 cgpa through all semesters
+		<hr>
+		Surya Roshni Ltd : 
+		
+		&bull; 6.5 cgpa in be,X,XII
+		<hr>
+		Schneider electric India Pvt Ltd : 
+		
+		&bull; 6.5 cgpa in be,X,XII
+		<hr>
+		Reliance industries : 
+		
+		&bull; Minimum of 6.0 cgpa through all semesters
+		<hr>
+		Larsen and toubro : 
+		
+		&bull; Minimum of 6.0 cgpa through all semesters
+		<hr>
+		Indian Navy : 
+		
+		&bull; degree should be completed
+		<hr>
+		Power grid corporation of india : 
+		
+		&bull; Minimum of 6.0 cgpa through all semesters
+		<hr>
+		CEAT : 
+		
+		&bull; Minimum of 60% should be present overall , at the end of btech
+		<hr>
+		Oil and Natural Gas : 
+		
+		&bull; Minimum of 60% should be present overall , at the end of btech
+		<hr>
+		Emcure Pharmaceuticals : 
+		
+		&bull; Minimum of 60% should be present overall , at the end of btech
+		<hr>
+		Indian Oil  : 
+		
+		&bull; 6.5 cgpa in be,X,XII
+		<hr>
+		Texas Instruments : 
+		
+		&bull; Minimum of 6.0 cgpa through all semesters
+		<hr>
+		Bharat Heavy electricals : 
+		
+		&bull; 6.5 cgpa in be,X,XII
+		<hr>
+		Qualcomm : 
+		
+		&bull; Minimum of 6.0 cgpa through all semesters
+		<hr>
+		Lam research : 
+		
+		&bull; Minimum of 6.0 cgpa through all semesters
+		<hr>
+		Tata steel : 
+		
+		&bull; Minimum of 6.0 cgpa through all semesters
+		<hr>
+		KONE : 
+		
+		&bull; Minimum of 60% should be present overall , at the end of btech
+		<hr>
+		National Thermal Power : 
+		
+		&bull; Minimum of 60% should be present overall , at the end of btech
+		<hr>
+		Mott MacDonald : 
+		
+		&bull; Minimum of 6.0 cgpa through all semesters
+		<hr>
+		Nokia : 
+		
+		&bull; Minimum of 6.0 cgpa through all semesters
+		<hr>
+		AFCONS Infrastructure : 
+		
+		&bull; Minimum of 60% should be present overall , at the end of btech
+       		<hr>
+    </pre>  
+    <pre id = "mech" style="text-align: left;display:none;    width: 100vw;color: wheat;font-size: medium;">
+		Skyy Rider Institutions : 
+
+		&bull; 6.5 cgpa in be,X,XII
+		<hr>
+		Zenq : 
+		
+		&bull; Minimum of 60% should be present overall , at the end of btech
+		<hr>
+		GSPANN technologie : 
+		
+		&bull; Minimum of 6.0 cgpa through all semesters
+		<hr>
+		Sai Sectretarial Services : 
+		
+		&bull; Minimum of 60% should be present overall , at the end of btech
+       	<hr>
+    </pre> 
+    <pre id = "automobile" style="text-align: left;display:none;    width: 100vw;color: wheat;font-size: medium;">
+		Satyam venture engineering services :
+		
+		&bull; Educational Qualification: ME/M. Tech - ECE,EEE. 60% or 6.5 GPA and above throughout without any running backlogs. 2020/2021 graduates.
+		<hr>
+		Go speedy go : 
+		
+		&bull; Diploma/ B.Tech (ME, EEE,ECE)/,BBA, MBA
+		&bull; No backlogs at the time of joining.
+		<hr>
+		Tata motors :
+		
+		&bull; Must be graduate/ post-graduate.
+		&bull; 12th, ITI, Diploma, Degree
+		<hr>
+		Maruti suzuki private Ltd :
+		
+		&bull; Trades, Fitter, Welder, Painter, Turner, Diesel Mechanic , Machinist, Motor Mechanic Vehicle, Technician Automotive Manufacturing & other relevant trades as per MSIL requirement.
+		&bull; Age. 18-26 years (on the day of joining)
+		&bull; ITI Council. NCVT / SCVT only.
+		<hr>
+		Hero motocorp Ltd :
+		
+		&bull; Educational Qualification: BE/B. Tech - Automobile/Mechanical.
+		&bull; 60% or 6.5 GPA and above throughout without any running backlogs.
+		<hr>
+		Bajaj auto Ltd :
+		
+		&bull; The eligibility criteria for the fresher to join Bajaj Auto is throughout 60% means in 10th , 12th and in Graduation. Candidate should not have any pending backlogs at the time of appearing for Bajaj Auto Recruitment process. Good communication skills, Good aptitude and reasoning skills is required.
+		<hr>
+		Ashok Leyland ltd :
+		
+		&bull; Candidates must have a minimum aggregate of 60% and above throughout their academics.
+		&bull; The age limit must be between 18-35 years.
+		<hr>
+		TVs motor company limited : 
+		
+		&bull; 10th, 12th, Degree, Graduate / BE /B.Tech/ MCA / Post Graduate
+		<hr>
+		Eicher motors :
+		
+		&bull; The candidates who have completed 12th, ITI, Diploma, Degree are eligible to apply for Eicher Motors
+		<hr>
+		Force motors :
+		
+		&bull; The candidates who have completed 12th, ITI, Diploma, Degree are eligible to apply.
+		<hr>
+		Sml Isuzu Ltd :
+		
+		&bull; Must be a B.Tech/B.E(Mechanical)
+		&bull; 60 percent throughout (Class X, XII and B.Tech).
+		&bull; No backlogs
+		<hr>
+    </pre> 
+    </div>
+    <div class="col-md-12">
+        <center>        <button class="btn btn-success" onclick="backToResume()">Back To Resume</button>
+        </center>
+    </div>
+</div>
+
+</body>
+<script src="js/themeChange.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+
+</html>
